@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/carousel.css">
+	<script type="text/javascript" src = "js/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src = "js/carousel.js"></script>
+	<style type="text/css">
+	.container{background:black;}
+	</style>
+</head>
+<body>
+
+<div class = "container">
+	<div class = "js-carousel"
+		data-settings='{
+			"picHeight": 270,
+			"picWidth": 640,
+			"scale":0.8,
+			"changeSpeed":500,
+			"autoDir":"right",
+			"autoSpeed":2000,
+			"opacity": 0.5,
+			"align":"middle",
+			"btntype":"hide"
+		}'
+	>
+		<ul class = "carousel-ul">
+			
+			<li class = "carousel-li">
+				<img src="images/1.jpg">
+			</li>
+			<li class = "carousel-li">
+				<img src="images/2.jpg">
+			</li>
+			<li class = "carousel-li">
+				<img src="images/3.jpg">
+			</li>
+			<li class = "carousel-li">
+				<img src="images/4.jpg">
+			</li>
+			<li class = "carousel-li">
+				<img src="images/5.jpg">
+			</li>
+			<li class = "carousel-li">
+				<img src="images/6.jpg">
+			</li>
+		</ul>
+	</div>
+</div>
+		<script type="text/javascript">
+	$(function(){
+		new Carousel(".container");
+	});
+	</script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+*{
+	margin:0;
+	padding:0;
+	border:none;
+}
+
+p:after, p:before{content:'';}
+
+.js-carousel{position: relative;margin:0px auto;}
+
+.js-carousel .carousel-ul{display: block;}
+.js-carousel .carousel-ul .carousel-li{
+	position: absolute;
+	font-size:0;/*消除间隙*/
+}
+.js-carousel .carousel-ul .carousel-li > img{display: block;height:100%;width:100%;}
+
+.js-carousel .carousel-btn{
+	position: absolute;
+	display: block;
+	top:0;
+	height:100%;
+	width:20px;
+	z-index: 999;
+	cursor:pointer;
+}
+*html .js-carousel .carousel-btn{background: white;}
+.js-carousel .carousel-prev-btn{left:0;}
+.js-carousel .carousel-prev-btn-show{background: url(../images/btn_l.png) no-repeat center center;}
+
+.js-carousel .carousel-next-btn{right:0;}
+.js-carousel .carousel-next-btn-show{background: url(../images/btn_r.png) no-repeat center center;}
+.js-carousel .carousel-ul{position: relative;}
+
